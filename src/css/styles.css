@@ -1,0 +1,49 @@
+/* v-clock default style */
+[v-cloak] {
+	display: none;
+}
+
+/* adding anchor tag cursor since vuejs does not use href */
+a {
+	cursor: pointer;
+}
+
+/* user photo style */
+.user-photo{
+	width: 128px;
+	height: 128px;
+}
+
+/* style for v-lazy-image */
+.v-lazy-image {
+	filter: blur(10px);
+	transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+	filter: blur(0);
+}
+
+/* center vue-pagination */
+.pagination {
+	justify-content: center;
+}
+
+/* remove pagination focus outline */
+a.page-link:focus {
+    box-shadow: none;
+}
+
+/* remove highlighting of pagination button */
+.page-item {
+	user-select: none;
+}
+
+.page-item.disabled {
+	cursor: not-allowed;
+}
+
+/* fix modal-header on bootbox*/
+.modal-header {
+	display: block !important;
+}
